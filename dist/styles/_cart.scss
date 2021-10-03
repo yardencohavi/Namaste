@@ -1,0 +1,38 @@
+.cart {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    &__item {
+        border-bottom: 1px solid #e0e6ef;
+        padding: 10px 10px;
+        height: 120px;
+        display: flex;
+    }
+    &__total{
+        width: 83px;
+        margin-top: 70px;
+        text-align: center;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+    }
+    &__title{
+        margin-top: 10px;
+        font-size: 14px;
+		line-height: 14px;
+		
+		text-transform: uppercase;
+		color: #979797;
+		font-weight: 700;
+    }
+    &__amount{
+        width: 100px;
+        margin-top: 70px;
+    }
+    &__footer{
+    }
+    &__price{
+        margin-top: 30px;
+    }
+}

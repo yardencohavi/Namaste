@@ -1,0 +1,47 @@
+@import "variables";
+.card{
+	&__item{
+		flex: 0 1 30%;
+	}
+	&__img{
+		display: block;
+		border: 0;
+		width: 85%;
+		height: auto;
+	}
+	&__description{
+		margin: 5px 0;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	&__title{
+		font-size: 14px;
+		line-height: 14px;
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		color: #979797;
+		font-weight: 700;
+	}
+	&__price{
+		font-family: var(--primary-font);
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 1.25;
+		letter-spacing: .01875em;
+		color: #605e5c;
+		margin: 0;
+		padding: 0;
+	}
+	&__details{
+		z-index: 1;
+	}
+    &__amount{
+		input{
+			text-align: center;
+			width: 32px;
+			font-size: 16px;
+			color: #43484D;
+		}
+	}
+}

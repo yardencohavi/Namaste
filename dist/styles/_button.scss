@@ -1,0 +1,89 @@
+@import "variables";
+
+.button {
+    background-image:  $liner;
+    padding: 10px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    margin: -1px;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $white;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:hover {
+        transform: scale(1.07);
+        
+    }
+
+    &__tiny {
+        height: 1.75rem;
+        width: 1.75rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+        svg {
+            height: 100%;
+            width: 100%;
+            fill: lightblue;
+            transition: all .3s;
+
+            &:hover {
+                fill: lightblue;
+                transform: translateY(-1px);
+            }
+
+            &:active {
+                fill: lightblue;
+                transform: translateY(0);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+    }
+    &__add{
+        width: 67%;
+        position: relative;
+    }
+    &__remove{
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        margin-top: 65px;
+    }
+}
+
+ .card__love {
+            background-image: $liner;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            height: 4.5rem;
+            width: 4.5rem;
+            margin-left: auto;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+                transform: scale(1.07);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            svg {
+                height: 2.75rem;
+                width: 2.75rem;
+                fill: #fff;
+            }
+        }

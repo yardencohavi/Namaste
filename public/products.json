@@ -1,0 +1,101 @@
+
+{
+    "products": [
+      
+      {
+        "id": 1,
+        "title": "WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_00517_b1_a1_750x.jpg?v=1616699548",
+        "price": 321.1,
+        "colors": [
+          "green",
+          "highliter",
+          "Powder Pink",
+          "Eclipse"
+        ],
+        "description": "it’s roomy, perfectly cushioned for joint support, anti-odor, dry-wicking and slip-free, wet or dry. It’s also 100% formaldehyde-free, non-toxic and PVC-free."
+      },
+      {
+        "id": 2,
+        "title": "CHAKRA WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_03829_b1_a1_750x.jpg?v=1611201623",
+        "price": 365.20,
+        "color": "black",
+        "description": "Practice with better alignment using the asana-guiding grid etched into the luxe Chakra Alignment Mat. "
+      },
+      {
+        "id": 3,
+        "title": "AIR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_03606_b1_a1_750x.jpg?v=1618513375",
+        "price": 257.90,
+        "color": [
+          "black",
+          "Dove Grey"
+        ],
+        "description": "Dry-wicking surface draws moisture away. Natural rubber backing offers the perfect amount of cushioning. Anti-odor."
+      },
+      {
+        "id": 4,
+        "title": "TIE DYE WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7092R_00_1_4_ccc72159-4170-4bfc-a8f4-d91240abc91c_432x.jpg?v=1593470203",
+        "price": 385.99,
+        "color": [
+          "Pink Tie Dye",
+          "lightblue"
+        ],
+        "description": "Add some color to your flow with our yogi-approved, “magic” Warrior Mat in non-toxic, natural rubber with a bold tie-dyed print."
+      },
+      {
+        "id": 5,
+        "title": "CAMO WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/A0142U_01858_b1_a1_432x.jpg?v=1631740560",
+        "price": 400.99,
+        "color": [
+          "jungle",
+          "roze"
+        ],
+        "description": "Camo alert! Our yogi-approved & non-toxic, “magic” Warrior Mat is here in a cool, now print. "
+      },
+      {
+        "id": 6,
+        "title": "LONG WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_00013_b1_a1_f31ced8b-84b5-433f-a27a-5ebb11caf6c0_432x.jpg?v=1620961233",
+        "price": 420.00,
+        "color": [
+          "white",
+          "hot pink"
+        ],
+        "description": "with 10” more length to sink into poses—especially for taller yogis. Anti-odor."
+      },
+      {
+        "id": 7,
+        "title": "PRIDE WARRIOR MAT",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/A0142U_04072_b1_a1_432x.jpg?v=1616543168",
+        "price": 250,
+        "color": "rainbow",
+        "description": "Part of our limited-edition Pride 2021 capsule benefitting the Trevor Project"
+      },
+      {
+        "id": 8,
+        "title": "ALO YOGA STRAP",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_02287_b1_a1_432x.jpg?v=1617056667",
+        "price": 76.5,
+        "color": [
+          "lightblue",
+          "black"
+        ],
+        "description": "help you carry your mat and help you increase flexibility"
+      },
+      {
+        "id": 9,
+        "title": "UPLIFTING YOGA BLOCK",
+        "imgUrl": "https://cdn.shopify.com/s/files/1/2185/2813/products/W7192R_02597_b1_a1_432x.jpg?v=1606194701",
+        "price": 65.99,
+        "color": [
+          "lightblue",
+          "jungle"
+        ],
+        "description": "it’s roomy, perfectly cushioned for joint support, anti-odor, dry-wicking and slip-free, wet or dry. It’s also 100% formaldehyde-free, non-toxic and PVC-free."
+      }
+    ]
+  }
