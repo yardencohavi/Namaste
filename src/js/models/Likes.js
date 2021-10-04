@@ -1,16 +1,17 @@
+import { renderProduct } from "../view/productView";
+
 export default class Likes{
     constructor(){
         this.likes = [];
     }
-    addLike(id,title,description,img){
+    addLike(product){
         const like = {
-            id,
-            title,
-            description,
-            img
+            id : product.id,
+            title: product.title,
+            price: product.price,
+            img: product.imgUrl
         }
         this.likes.push(like);
-        this.persistData();
         return like;
     }
     deleteLike(id){
@@ -24,12 +25,5 @@ export default class Likes{
     getNumLikes(){
         return this.likes.length;
     }
-    persistData() {
-        localStorage.setItem('likes', JSON.stringify(this.likes));
-    }
-    readStorage(){
-        const storage =JSON.parse(localStorage.getItem('likes'));
-        if(storage){
-            this.likes = storage;}
-    }
+
 }

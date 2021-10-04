@@ -3,36 +3,88 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    &__heading{
+        border-bottom: 1px solid #e0e6ef;
+        text-align: center;
+    }
     &__item {
         border-bottom: 1px solid #e0e6ef;
         padding: 10px 10px;
         height: 120px;
         display: flex;
+        position: relative;
+    }
+    &__row{
+        display: flex;
+        flex-direction: row;
+        
     }
     &__total{
-        width: 83px;
-        margin-top: 70px;
-        text-align: center;
-        font-size: 16px;
-        color: #43484D;
-        font-weight: 300;
+        width: 63px;
+        font-size: 1.3rem;
+		font-weight: normal;
+		letter-spacing: .0694444444em;
+		color: #323232;
+        position: absolute;
+        bottom:10px;
+        right: 40px;
+    }
+    &__subtotal{
+        font-size: 1.3rem;
+        font-weight: 900;
+        line-height: 1.33;
+        letter-spacing: .0694444444em;
+        color: #000;
+        margin-left: 270px;
+    }
+    &__footer{
+        position: relative;
+    }
+    &__checkout{
+        position: absolute;
+        right: 0px;
+    }
+    &__sum{
+        width: 63px;
+        font-size: 1.3rem;
+		font-weight: normal;
+		letter-spacing: .0694444444em;
+		color: #323232;
     }
     &__title{
         margin-top: 10px;
         font-size: 14px;
 		line-height: 14px;
-		
 		text-transform: uppercase;
 		color: #979797;
 		font-weight: 700;
     }
     &__amount{
-        width: 100px;
-        margin-top: 70px;
-    }
-    &__footer{
+        width: 80px;
+        position: absolute;
+        bottom: 10px;
+        right: 120px;
+        input{
+			text-align: center;
+			width: 32px;
+			font-size: 16px;
+			color: #43484D;
+		}
     }
     &__price{
-        margin-top: 30px;
+        width: 63px;
+        font-size: 1.3rem;
+		font-weight: normal;
+		letter-spacing: .0694444444em;
+		color: #323232;
+        position: absolute;
+        bottom: 10px;
     }
+    &__empty{
+        text-align: center;
+        font-size: 12px;
+    }
+}
+h2{
+    text-transform: uppercase;
 }

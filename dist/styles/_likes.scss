@@ -2,6 +2,8 @@
     position: relative;
     align-self: stretch;
     padding: 0 !important;
+    display: flex;
+    flex-direction: column;
 
     &__field {
         cursor: pointer;
@@ -15,7 +17,22 @@
             background-color: #F2EFEE;
         }
     }
-
+    &__price{
+        width: 63px;
+        font-size: 1.3rem;
+        font-weight: normal;
+        letter-spacing: .0694444444em;
+        color: #323232;
+        position: absolute;
+        bottom: 10px;
+    }
+    &__link{
+        border-bottom: 1px solid #e0e6ef;
+        padding: 10px 10px;
+        height: 120px;
+        display: flex;
+        position: relative;
+    }
     &__panel:hover,
     &__field:hover+&__panel {
         visibility: visible;
@@ -97,37 +114,12 @@
     }
 
     &__name {
-        font-size: 1.3rem;
-        color: #F59A83;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 14px;
         text-transform: uppercase;
-        font-weight: 600;
-        margin-bottom: .3rem;
+        color: #979797;
+        font-weight: 700;
     }
 
-    &__author {
-        font-size: 1.1rem;
-        color: #968B87;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
-
-    &__pages {
-        margin-top: 3rem;
-        padding: 0 3rem;
-
-        &::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    }
-
-    &__btn--prev {
-        float: left;
-        flex-direction: row-reverse;
-    }
-
-    &__btn--next {
-        float: right;
-    }
 }

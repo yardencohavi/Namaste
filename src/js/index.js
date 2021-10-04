@@ -1,10 +1,7 @@
 import "/dist/styles/main.scss";
 import data from '/public/products.json';
-import { renderLoader } from "./view/base";
-// import Navbar from "./models/Navbar";
 import Likes from "./models/Likes";
 import Cart from "./models/Cart";
-// import * as navbarView from './views/navbarView';
 import * as productView from './view/productView';
 import * as cartView from './view/cartView';
 import * as likesView from './view/likesView';
@@ -19,7 +16,6 @@ window.addEventListener("load", () => {
 /**
  * PRODUCT CONTROLLER
  */
-
 const controlProduct = () => {
     state.products = data.products;
     // renderLoader(elements.productsList);
@@ -27,6 +23,10 @@ const controlProduct = () => {
         productView.renderProduct(el, false);
     })
 }
+
+/**
+ * CART CONTROLLER
+ */
 state.cart = new Cart();
 const controlCart = (id) => {
     if (!state.cart) {
@@ -46,16 +46,10 @@ likesView.toggleLikeMenu(state.likes.getNumLikes());
 const controlLike = (id) => {
     if (!state.likes) state.likes = new Likes();
     const curProduct = state.products.find(el => el.id === parseInt(id));
-
     if (!state.likes.isLiked(id)) {
-        const newLike = state.likes.addLike(
-            id,
-            curProduct.title,
-            curProduct.description,
-            curProduct.imgUrl
-        )
+        state.likes.addLike(curProduct);
         likesView.toggleLikeBtn(true, id);
-        likesView.renderLike(newLike);
+        likesView.renderLike(curProduct);
     } else {
         state.likes.deleteLike(id);
         likesView.toggleLikeBtn(false, id);
@@ -65,6 +59,7 @@ const controlLike = (id) => {
 }
 
 elements.productsList.addEventListener("click", e => {
+   
     const id = e.target.closest(".card__item").dataset.itemid;
     if (e.target.matches('.button__add, .button__add *')) {
         controlCart(id);
@@ -73,6 +68,7 @@ elements.productsList.addEventListener("click", e => {
     if (e.target.matches('.card__love, .card__love *')) {
         controlLike(id);
     }
+   
     if (e.target.matches('.button__dec, .button__dec *')) {
         const curAmount = state.cart.getAmount(id);
         if (curAmount > 1) {

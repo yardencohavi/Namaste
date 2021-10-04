@@ -9,11 +9,10 @@ export const renderProduct = (product, isLiked) => {
                 ${product.title}
             </h1>
             <p class="card__description">${product.description}</p>
-            <h2 class="card__price">${product.price}</h2>
-
-            
-
-            <button class="card__love" data-itemid=${product.id}>
+        </div>
+        <div class="card__price">${product.price}₪</div>
+        <div class="card__row">
+            <button class="card__love button__love" data-itemid=${product.id}>
                 <svg class="header__likes" >
                     <use data-itemid=${product.id}  href="img/icons.svg#icon-heart${isLiked ? '' : '-outlined'}"></use>
                 </svg>
@@ -31,7 +30,7 @@ export const renderCardAmount = (id) => {
                         <use href="img/icons.svg#icon-circle-with-minus"></use>
                     </svg>
                 </button>
-                <input class="card__value" data-itemid=${id} type="number" name="name" min="1" value="1">
+                <input class="card__value" data-itemid=${id} type="number" readonly="readonly" name="amount" min="1" value="1">
                 <button class="button__tiny button__inc">
                     <svg>
                         <use href="img/icons.svg#icon-circle-with-plus"></use>

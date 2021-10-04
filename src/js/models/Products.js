@@ -14,16 +14,12 @@ export default class Products {
             }
         });
     }
-    
     calcAmount(){
         this.amount = 1;
     }
     calcTotal(amount){
         return amount * this.price;
     }
-    // calcColor(){
-    //     this.color = 
-    // }
     updateAmount(){
         const newAmount = type === 'dec' ? this.amount - 1 : this.amount + 1 ;
         this.amount = newAmount;

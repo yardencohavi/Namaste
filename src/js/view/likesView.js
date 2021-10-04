@@ -11,12 +11,10 @@ export const renderLike = like => {
     const markup = `
         <li>
             <a class="likes__link" href="#${like.id}">
-                <figure class="likes__fig">
-                    <img src="${like.img}" alt="${like.title}">
-                </figure>
+                <img src="${like.imgUrl}" alt="${like.title}" class="cart__img">
                 <div class="likes__data">
                     <h4 class="likes__name">${like.title}</h4>
-                    <p class="likes__author">${like.author}</p>
+                    <p class="likes__price">${like.price}₪</p>
                 </div>
             </a>
         </li>
