@@ -2,7 +2,7 @@ import { elements } from "./base";
 
 export const renderItem = (product) => {
     const markup =`
-    <li class="cart__item" data-itemid=${product.id}>
+    <li class="card__item cart__item" data-itemid=${product.id}>
         <img src="${product.imgUrl}" alt="${product.title}" class="cart__img">
         <div class"cart__details">
             <h1 class="cart__title">
